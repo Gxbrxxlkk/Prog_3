@@ -18,10 +18,10 @@ public class Caminhao extends Veiculo {
     @Override
     public void acelerar() {
         velocidade += 10;
-        if (velocidade == 0) System.out.println("O carro saiu do lugar, e está a " + velocidade);
-        else if (velocidade < 30) System.out.println("O carro está andando a " + velocidade);
-        else if (velocidade < 70) System.out.println("O Carro está relativamente rápido: " + velocidade + " Km/h");
-        else System.out.println("O carro está bem rápido" + velocidade + " km/h");
+        if (velocidade == 0) System.out.println("O Caminhão saiu do lugar, e está a " + velocidade);
+        else if (velocidade < 30) System.out.println("O Caminhão está andando a " + velocidade);
+        else if (velocidade < 70) System.out.println("O Caminhão está relativamente rápido: " + velocidade + " Km/h");
+        else System.out.println("O Caminhão está bem rápido" + velocidade + " km/h");
     }
 
     @Override
@@ -30,7 +30,7 @@ public class Caminhao extends Veiculo {
             velocidade -= 10;
             System.out.println("Freiando" + velocidade);
         }
-        System.out.println("O carro está parado");
+        System.out.println("O Caminhão está parado");
     }
 
     //Declaração de atributos

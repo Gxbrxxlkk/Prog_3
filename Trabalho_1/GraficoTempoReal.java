@@ -11,15 +11,13 @@ usando Swing + Java2D
 Exemplo de um gráfico em tempo real, aprender o que cada parte faz e adaptar para o veiculo
 */
 
-
-
 public class GraficoTempoReal extends JPanel {
 
     private final List<Integer> dados = new ArrayList<>();
     private final Random random = new Random();
 
     public GraficoTempoReal() {
-        new Timer(1000, e -> {
+        new Timer(500, e -> {
             int novoValor = random.nextInt(100); // valor aleatório
             dados.add(novoValor);
             repaint();
