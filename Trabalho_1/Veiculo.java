@@ -1,11 +1,11 @@
 package Prog_3.Trabalho_1;
 
-public class Veiculo {
+public abstract class Veiculo {
     
-    public void acelerar() {}
+    public abstract void acelerar();
 
-    public void freiar() {}
+    public abstract void freiar();
 
-    public void descricao() {}
+    public abstract void descricao();
 
 }

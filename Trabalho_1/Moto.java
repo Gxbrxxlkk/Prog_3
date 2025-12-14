@@ -3,11 +3,8 @@ package Prog_3.Trabalho_1;
 public class Moto extends Veiculo {
 
     public Moto(String adescricao) {
-        
-        if (adescricao.isEmpty()) descricao = "N/A";
-        else descricao = adescricao;
-
-        velocidade = 0;
+        this.descricao = (adescricao != null && !adescricao.isEmpty()) ? adescricao : "N/A";
+        this.velocidade = 0;
     }
 
     @Override
@@ -18,17 +15,17 @@ public class Moto extends Veiculo {
     @Override
     public void acelerar() {
         velocidade += 10;
-        if (velocidade == 0) System.out.println("A Moto saiu do lugar, e está a " + velocidade);
-        else if (velocidade < 30) System.out.println("A Moto está andando a " + velocidade);
+        if (velocidade == 10) System.out.println("A Moto saiu do lugar, e está a " + velocidade + " km/h");
+        else if (velocidade < 30) System.out.println("A Moto está andando a " + velocidade + " km/h");
         else if (velocidade < 70) System.out.println("A Moto está relativamente rápida: " + velocidade + " Km/h");
-        else System.out.println("A Moto está bem rápida" + velocidade + " km/h");
+        else System.out.println("A Moto está bem rápida: " + velocidade + " km/h");
     }
 
     @Override
     public void freiar() {
         while (velocidade > 0) {
             velocidade -= 10;
-            System.out.println("Freiando" + velocidade);
+            System.out.println("Freiando: " + velocidade);
         }
         System.out.println("A Moto está parada");
     }
