@@ -1,0 +1,7 @@
+Executar os comandos no diretório na raiz (Antes de Prog_3).
+
+Lembrar de substituir o URL, usuário e senha do banco de dados em Conexao.java
+
+
+javac -cp Prog_3/Integracao_bd/mysql-connector-j-9.6.0.jar Prog_3/Integracao_bd/*java
+java -cp .:Prog_3/Integracao_bd/mysql-connector-j-9.6.0.jar Prog_3.Integracao_bd.Main
