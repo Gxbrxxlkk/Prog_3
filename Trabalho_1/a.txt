@@ -1,3 +1,0 @@
-Criar um sistema para simular veículos com comportamentos diferentes ao acelerar e
-frear.
-
