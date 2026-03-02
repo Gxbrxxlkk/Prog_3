@@ -23,11 +23,26 @@ public class Moto extends Veiculo {
 
     @Override
     public void freiar() {
-        while (velocidade > 0) {
+        if (velocidade > 0) {
             velocidade -= 10;
             System.out.println("Freiando: " + velocidade);
         }
-        System.out.println("A Moto está parada");
+        else System.out.println("A Moto está parada");
+    }
+
+    @Override
+    public int getVelocidade() {
+        return velocidade;
+    }
+
+    @Override
+    public String getDescricaoVeiculo() {
+        return descricao;
+    }
+
+    @Override
+    public String toString() {
+        return "Moto - " + descricao;
     }
 
     //Declaração de atributos

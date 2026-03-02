@@ -8,4 +8,8 @@ public abstract class Veiculo {
 
     public abstract void descricao();
 
+    public abstract int getVelocidade();
+
+    public abstract String getDescricaoVeiculo();
+
 }
